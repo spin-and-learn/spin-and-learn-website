@@ -8,5 +8,8 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "5.2.0",
     "sass": "^1.58.3",
+    "socket.io-client": "^4.6.1",
+    "axios": "^1.3.3",
+    "moment": "^2.29.4"
   }
 ```
