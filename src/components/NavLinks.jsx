@@ -11,7 +11,7 @@ const NavLinks = () => {
     return (
         <div className="nav-links">
             {links.map((link, key) => (
-                <a href={link.path} key={`nav-links-${link.path}-${key}`} >{link.name}</a>
+                <a href={link.path} key={`nav-links-${link.path}-${key}`}>{link.name}</a>
             ))}
         </div>
     )
