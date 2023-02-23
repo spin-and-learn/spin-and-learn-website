@@ -11,6 +11,7 @@
     align-items: center;
 
     .left {
+        
     }
 
     .right {
@@ -23,10 +24,6 @@
             color: $main-blue;
             font-family: 'Comfortaa', cursive;
             font-weight: bold;
-        }
-
-        a:hover {
-            opacity: 0.5;
         }
     }
 }

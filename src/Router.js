@@ -15,7 +15,7 @@ const Router = createBrowserRouter([
         element: <Home />
     },
     {
-        path: "/about-us",
+        path: "/about",
         element: <About />
     },
     {
@@ -33,7 +33,7 @@ const Router = createBrowserRouter([
     {
         path: "/login",
         element: <SignUpIn />
-    },
+    }
 ])
 
 export default Router
