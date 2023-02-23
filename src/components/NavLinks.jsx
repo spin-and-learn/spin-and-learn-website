@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+
 const NavLinks = () => {
     const links = [
         { path: "about-us", name: "About us" },
@@ -11,7 +11,7 @@ const NavLinks = () => {
     return (
         <div className="nav-links">
             {links.map((link, key) => (
-                <Link to={link.path} key={`nav-links-${link.path}-${key}`} >{link.name}</Link>
+                <a href={link.path} key={`nav-links-${link.path}-${key}`} >{link.name}</a>
             ))}
         </div>
     )
