@@ -1,0 +1,29 @@
+@import "./global";
+
+
+.Header {
+    height: 75px;
+    padding: 0 30px;
+    background: $header-gray;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .left {
+        
+    }
+
+    .right {
+        display: flex;
+        align-items: center;
+
+        a {
+            margin: 0 5px;
+            text-decoration: none;
+            color: $main-blue;
+            font-family: 'Comfortaa', cursive;
+            font-weight: bold;
+        }
+    }
+}
