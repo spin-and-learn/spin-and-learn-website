@@ -11,7 +11,7 @@ const Header = () => {
             </div>
             <div className="right">
                 <NavLinks />
-                <Button />
+                <Button title={"Get Program"} />
             </div>
         </div>
     )
