@@ -4,6 +4,11 @@ import NavLinks from "./NavLinks"
 import Button from "./Button"
 
 const Header = () => {
+
+    const handleGetProgram = () => {
+        window.location.href = "/programs"
+    }
+
     return (
         <div className="Header">
             <div className="left">
@@ -11,7 +16,7 @@ const Header = () => {
             </div>
             <div className="right">
                 <NavLinks />
-                <Button title={"Get Program"} />
+                <Button onClick={handleGetProgram} title={"Get Program"} />
             </div>
         </div>
     )
