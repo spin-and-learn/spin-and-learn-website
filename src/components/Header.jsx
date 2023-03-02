@@ -8,9 +8,10 @@ import Logo from "./Logo"
 const Header = () => {
 
     const handleGetProgram = () => {
-        window.location.href = "/programs"
+        window.location.href = "/forms"
         
     }
+
    
     return (
         <div className="Header">
@@ -21,6 +22,7 @@ const Header = () => {
 
             <div className="right">
                 <NavLinks />
+                {/*  */}
                 <Button onClick={handleGetProgram} title={"Get Program"} />
             </div>
         </div>

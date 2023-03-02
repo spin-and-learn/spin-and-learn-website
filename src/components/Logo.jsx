@@ -1,5 +1,4 @@
 import React from 'react'
-import Home from '../views/Home'
 import logo from '../asserts/SLheadlineLogo.png'
 
 
