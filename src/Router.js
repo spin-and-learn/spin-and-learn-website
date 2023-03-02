@@ -7,6 +7,7 @@ import Store from './views/Store'
 import Programs from './views/Programs'
 import SignUpIn from './views/SignUpIn'
 import Events from "./views/Events"
+import Forms from "./views/Forms"
 
 
 const Router = createBrowserRouter([
@@ -33,6 +34,10 @@ const Router = createBrowserRouter([
     {
         path: "/login",
         element: <SignUpIn />
+    },
+    {
+        path: "/forms",
+        element: <Forms />
     }
 ])
 
