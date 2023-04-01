@@ -1,12 +1,13 @@
 import React from 'react'
 import LandingPage from '../components/LandingPage'
+import OurFocus from '../components/OurFocus'
 
 const Home = () => {
 
     return (
         <div className="Home">
             <LandingPage />
-            <h1>Home page</h1>
+            <OurFocus />
         </div>
     )
 }
