@@ -2,7 +2,7 @@
 
 
 .Header {
-    height: 75px;
+    height: 70px;
     padding: 0 30px;
     background: $header-gray;
 
@@ -32,6 +32,7 @@
         
         a:hover{
             color: $lightBlue;
+            text-decoration: underline;
         }
     }
 }
