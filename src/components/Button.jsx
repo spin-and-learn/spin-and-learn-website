@@ -8,7 +8,7 @@ export default ({ title, filled = true, height, width, onClick }) => {
     return (
         <div className="Button">
             <Space>
-                <Button onClick={onClick} className="hover" style={{
+                <Button id={title} onClick={onClick} className="hover" style={{
                     background: filled ? mainBlue : white,
                     color: filled ? white : mainBlue, marginLeft: 10,
                     height,

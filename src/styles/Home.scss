@@ -2,13 +2,14 @@
 
 .Home {
     .OurFocus {
+        // width: 800px;
         margin: 15px 0;
         padding: 0 30px;
         display: flex;
         justify-content: center;
 
         .wrap {
-            border: 3px solid $main-blue;
+            // border: 3px solid $main-blue;
             border-radius: 25px;
             display: flex;
 
@@ -17,7 +18,7 @@
                 display: flex;
                 align-items: center;
                 box-sizing: content-box;
-                
+
                 img {
                     width: 100%;
                     height: 600px;
@@ -84,5 +85,42 @@
             }
         }
 
+    }
+
+    .LandingPage {
+        position: relative;
+
+        img {
+            width: 100%;
+            height: calc(100vh - 70px);
+        }
+
+        .info {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+
+            h1 {
+                font-family: 'Comfortaa', cursive;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 60px;
+                line-height: 78px;
+                color: #fff;
+                text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                text-shadow:
+                    -1px -1px 0 #0972CE,
+                    1px -1px 0 #0972CE,
+                    -1px 1px 0 #0972CE,
+                    1px 1px 0 #0972CE;
+            }
+
+            .buttons {
+                display: flex;
+                justify-content: space-around;
+            }
+        }
     }
 }
