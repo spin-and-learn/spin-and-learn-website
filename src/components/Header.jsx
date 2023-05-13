@@ -9,21 +9,22 @@ const Header = () => {
 
     const handleGetProgram = () => {
         window.location.href = "/forms"
-        
+
     }
 
-   
+
     return (
         <div className="Header">
             <div className="left">
-               <Logo/>
+                <Logo />
             </div>
 
 
             <div className="right">
                 <NavLinks />
-                {/*  */}
-                <Button onClick={handleGetProgram} title={"Get Program"} />
+                <div className="div ms-2">
+                    <Button onClick={handleGetProgram} title={"Get Program"} />
+                </div>
             </div>
         </div>
     )

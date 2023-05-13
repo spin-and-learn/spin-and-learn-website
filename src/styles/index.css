@@ -12,3 +12,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.ant-select-single .ant-select-selector .ant-select-selection-item {
+  padding-top: 5px !important;
+}
+
+.ant-select-single .ant-select-selector .ant-select-selection-placeholder {
+  margin-bottom: 100px !important;
+}
