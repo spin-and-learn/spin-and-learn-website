@@ -1,22 +1,39 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Button from './Button'
 import LandingImg from "../assets/img/landing.png"
+import { useWindowScroll } from 'react-use';
 
 const LandingPage = () => {
+	const [scale, setScale] = useState(1);
+	const { y } = useWindowScroll();
 
-	const onClickButton = (e) => {
-		console.log(e.target.innerText)
-	}
+	useEffect(() => {
+		const windowHeight = window.innerHeight;
+		const scrollHeight = document.body.scrollHeight - windowHeight;
+		const scrollPosition = y / scrollHeight;
+		const maxScale = 1.2;
+		const minScale = 1;
+
+		const newScale = minScale + (maxScale - minScale) * scrollPosition;
+		setScale(newScale);
+	}, [y]);
 
 	return (
 		<div className='LandingPage' >
-			<img src={LandingImg} alt="LandingImg" />
+			<div >
+				<img
+					src={LandingImg}
+					alt={"alt"}
+					className="scale-image"
+					style={{ transform: `scale(${scale})` }}
+				/>
+			</div>
 			<div className="info">
 				<h1 >Welcome to Spin and Learn  <br />Table Tennis For All Schools</h1>
 				<div className="buttons">
-					<Button width={120} onClick={onClickButton} filled={false} title={"District"} />
-					<Button width={120} onClick={onClickButton} filled={false} title={"Students"} />
-					<Button width={120} onClick={onClickButton} filled={false} title={"Leaders"} />
+					{["District", "Students", "Leaders"].map((title, key) => (
+						<Button key={key} width={120} onClick={() => window.location.href = title.toLowerCase()} filled={false} title={title} />
+					))}
 				</div>
 			</div>
 		</div>
