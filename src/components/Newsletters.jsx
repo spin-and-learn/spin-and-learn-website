@@ -48,8 +48,6 @@ const Newsletters = () => {
                     <div className="right-bottom mt-4">
                         <Button
                             onClick={() => window.location.href = "/forms"}
-                            height={45}
-                            width={200}
                             title={"More info"}
                         />
                     </div>
@@ -113,8 +111,7 @@ const Newsletters = () => {
                         </div>
                         <Button
                             onClick={() => window.location.href = "/forms"}
-                            height={45}
-                            width={200}
+                            width={220}
                             title={"Submit"}
                         />
                     </form>
