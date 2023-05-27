@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import Button from './Button'
-import LandingImg from "../assets/img/landing.png"
+import LandingImg from "../assets/img/landing.jpeg"
 import { useWindowScroll } from 'react-use';
 
 const LandingPage = () => {
@@ -11,7 +11,7 @@ const LandingPage = () => {
 		const windowHeight = window.innerHeight;
 		const scrollHeight = document.body.scrollHeight - windowHeight;
 		const scrollPosition = y / scrollHeight;
-		const maxScale = 1.2;
+		const maxScale = 1.1;
 		const minScale = 1;
 
 		const newScale = minScale + (maxScale - minScale) * scrollPosition;

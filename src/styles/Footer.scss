@@ -1,0 +1,92 @@
+@import "./global";
+
+.Footer {
+    padding: 0 40px;
+    height: 200px;
+    width: 100%;
+    background: $header-gray;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .left {
+        width: 180px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: 100px;
+        }
+
+        .medias {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            a {
+
+
+                .icon {
+                    width: 30px;
+                    height: 30px;
+                    padding: 7px;
+                    border-radius: 100%;
+                    background: $main-blue;
+                    margin: 5px;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+
+    .center {
+        height: 100%;
+        padding: 20px 20px 40px;
+
+        display: flex;
+        justify-content: space-between;
+
+        .items {
+            margin: 5px 0;
+            padding: 0 40px;
+
+            display: flex;
+            align-items: center;
+
+            .icon {
+                width: 30px;
+                padding: 7px;
+                border-radius: 100%;
+                background: $main-blue;
+                // margin: 5px;
+
+                display: flex;
+                // justify-content: space-between;
+                align-items: center;
+
+            }
+
+            h1 {
+                font-size: 18px;
+                padding-top: 5px;
+                margin-left: 5px;
+                color: $main-blue;
+                font-weight: normal;
+            }
+        }
+    }
+
+    .right-bottom {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        color: #fff !important;
+
+    }
+}
