@@ -14,7 +14,7 @@ const Footer = () => {
     return (
         <div className="Footer">
             <div className="left">
-                <img src={logo} alt="" srcset="" />
+                <img src={logo} alt="logo" />
                 <div className="medias">
                     {icons.map((icon, key) => (
                         <a className='hover' target="_blank" key={key} href={icon.link}>

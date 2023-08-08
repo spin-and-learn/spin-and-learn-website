@@ -102,7 +102,7 @@
     }
 
     .OurMission {
-        background: $header-gray;
+        background: $light-gray;
         height: 600px;
 
         margin: 15px 0;
@@ -228,6 +228,7 @@
                         display: flex;
                         flex-direction: column;
                         margin-bottom: 15px;
+                        outline: none;
 
                         .ant-select-selector {
                             height: 40px !important;
@@ -243,9 +244,17 @@
                             padding: 0 10px;
                             border: none;
                             margin-bottom: 10px;
-
-                            // background: #EAEAEA;
                             border-radius: 15px;
+                            outline: 0.8px solid $main-blue;
+                        }
+
+                        .ant-select-selector {
+                            // background: #000;
+                            outline: 0.5px solid $main-blue;
+
+                            input {
+                                outline: none;
+                            }
                         }
                     }
                 }

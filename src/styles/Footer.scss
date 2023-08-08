@@ -4,7 +4,7 @@
     padding: 0 40px;
     height: 200px;
     width: 100%;
-    background: $header-gray;
+    background: $light-gray;
 
     display: flex;
     align-items: center;
@@ -51,6 +51,7 @@
 
         display: flex;
         justify-content: space-between;
+        align-items: center;
 
         .items {
             margin: 5px 0;

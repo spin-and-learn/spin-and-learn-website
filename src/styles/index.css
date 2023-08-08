@@ -6,6 +6,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #ffffff !important;
 }
 
 code {
@@ -20,4 +21,9 @@ code {
 
 .ant-select-single .ant-select-selector .ant-select-selection-placeholder {
   margin-bottom: 100px !important;
+}
+
+
+.active:active {
+  opacity: 0.6 !important;
 }

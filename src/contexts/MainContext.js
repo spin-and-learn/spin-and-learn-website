@@ -7,9 +7,11 @@ export const MainContext = createContext()
 
 const MainProvider = ({ children }) => {
     const [isLogedIn, setIsLogedIn] = useState(false)
+    const [isOpen, setOpen] = useState(false)
 
     const data = {
-        isLogedIn, setIsLogedIn
+        isLogedIn, setIsLogedIn,
+        isOpen, setOpen
     }
 
     return (

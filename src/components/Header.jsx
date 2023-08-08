@@ -19,11 +19,10 @@ const Header = () => {
                 <Logo />
             </div>
 
-
             <div className="right">
                 <NavLinks />
-                <div className="div ms-2">
-                    <Button onClick={handleGetProgram} title={"Get Program"} />
+                <div className="ms-2">
+                    <Button onClick={handleGetProgram} height={40} width={200} filled={true} title={"Get Programs"} />
                 </div>
             </div>
         </div>

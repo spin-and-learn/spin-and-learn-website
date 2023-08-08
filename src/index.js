@@ -8,7 +8,10 @@ import MainProvider from './contexts/MainContext'
 // styles
 import "./styles/index.css"
 import "./styles/Home.scss"
+import "./styles/forms.scss"
+import "./styles/colors.scss"
 import "./styles/Footer.scss"
+import "./styles/programs.scss"
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
