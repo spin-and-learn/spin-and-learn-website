@@ -6,9 +6,24 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #ffffff !important;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+.ant-select-single .ant-select-selector .ant-select-selection-item {
+  padding-top: 5px !important;
+}
+
+.ant-select-single .ant-select-selector .ant-select-selection-placeholder {
+  margin-bottom: 100px !important;
+}
+
+
+.active:active {
+  opacity: 0.6 !important;
 }

@@ -1,22 +1,22 @@
 import React from 'react'
-import { Button, Divider, Radio, Space } from 'antd'
+import { Button as ButtonContainer } from 'antd'
 
-export default ({ title, filled = true, height, width, onClick }) => {
+const Button = ({ title, filled = true, height, width, onClick }) => {
     const mainBlue = "#0972CE"
     const white = "#ffffff"
 
     return (
         <div className="Button">
-            <Space>
-                <Button onClick={onClick} className="hover" style={{
-                    background: filled ? mainBlue : white,
-                    color: filled ? white : mainBlue, marginLeft: 10,
-                    height,
-                    width
-                }} size={"large"}>
-                    {title}
-                </Button>
-            </Space>
+            <ButtonContainer id={title} onClick={onClick} className="hover" style={{
+                background: filled ? mainBlue : white,
+                color: filled ? white : mainBlue,
+                height: height ? height : 45,
+                width: width ? width : 200
+            }} size={"large"}>
+                <span style={{ color: "white" }}>{title}</span>
+            </ButtonContainer>
         </div>
     )
 }
+
+export default Button

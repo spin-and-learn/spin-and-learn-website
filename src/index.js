@@ -3,9 +3,16 @@ import ReactDOM from 'react-dom/client'
 import Router from './Router'
 import reportWebVitals from './reportWebVitals'
 import { RouterProvider } from "react-router-dom"
-
-import "./styles/index.css"
 import MainProvider from './contexts/MainContext'
+
+// styles
+import "./styles/index.css"
+import "./styles/Home.scss"
+import "./styles/forms.scss"
+import "./styles/colors.scss"
+import "./styles/Footer.scss"
+import "./styles/programs.scss"
+import "./styles/contact.scss"
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(

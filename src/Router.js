@@ -8,6 +8,7 @@ import Programs from './views/Programs'
 import SignUpIn from './views/SignUpIn'
 import Events from "./views/Events"
 import Forms from "./views/Forms"
+import Contact from "./views/Contact"
 
 
 const Router = createBrowserRouter([
@@ -18,6 +19,10 @@ const Router = createBrowserRouter([
     {
         path: "/about",
         element: <About />
+    },
+    {
+        path: "/contact",
+        element: <Contact />
     },
     {
         path: "/store",
@@ -32,7 +37,23 @@ const Router = createBrowserRouter([
         element: <Programs />
     },
     {
+        path: "/district",
+        element: <Programs />
+    },
+    {
+        path: "/students",
+        element: <Programs />
+    },
+    {
+        path: "/leaders",
+        element: <Programs />
+    },
+    {
         path: "/login",
+        element: <SignUpIn />
+    },
+    {
+        path: "/signup",
         element: <SignUpIn />
     },
     {
