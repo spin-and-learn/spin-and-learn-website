@@ -63,6 +63,7 @@ const Newsletters = () => {
                             <label htmlFor="jobRole">Job Role</label>
                             <Select
                                 id="jobRole"
+
                                 showSearch
                                 optionFilterProp="children"
                                 onChange={(value) => onChange({ id: "jobRole", value: value })}

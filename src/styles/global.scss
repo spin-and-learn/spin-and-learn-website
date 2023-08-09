@@ -1,6 +1,8 @@
 // Colors
 $main-blue: #0972CE;
 $header-gray: #f1f1f1;
+$light-gray: #FAFAFA;
+
 $lightBlue: rgba(9, 114, 206, 0.7);
 
 
@@ -18,7 +20,7 @@ $lightBlue: rgba(9, 114, 206, 0.7);
 }
 
 .hover:hover {
-    opacity: 0.5;
+    opacity: 0.8;
     cursor: pointer;
 }
 

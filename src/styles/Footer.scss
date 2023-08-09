@@ -1,92 +1,140 @@
 @import "./global";
+@import "funtions";
 
 .Footer {
-    padding: 0 40px;
-    height: 200px;
+    height: 560px;
     width: 100%;
-    background: $header-gray;
+    padding-top: 10px;
+    background: $light-gray;
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    .main {
+        @include flexBox(row, space-between, center);
 
-    .left {
-        width: 180px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        .left {
+            height: 100%;
+            padding: 20px;
+            @include flexBox(column);
 
-        img {
-            width: 100px;
-        }
+            .logo-footer {
+                padding-left: 100px;
 
-        .medias {
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-
-            a {
+                img {
+                    width: 100px;
+                    height: 100px;
+                }
+            }
 
 
-                .icon {
-                    width: 30px;
-                    height: 30px;
-                    padding: 7px;
-                    border-radius: 100%;
-                    background: $main-blue;
-                    margin: 5px;
+            .description {
+                max-width: 300px;
+                margin-bottom: 40px;
+                margin-left: 20px;
+                display: inline-block;
+                font-family: Inter, sans-serif;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 144%;
+                color: #5c5c5c;
+            }
 
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
+            .div-block {
+                margin-bottom: 10px;
+                margin-left: 15px;
+                @include flexBox(column, flex-start, center);
+
+
+                span {
+                    margin: 10px;
+                    font-family: 'Inter', sans-serif;
+                    font-weight: 600;
+                    color: #5c5c5c;
+
+                }
+
+                img {
+                    width: 50px;
+                    height: 50px;
+                    margin-right: 10px;
+                }
+            }
+
+            .medias {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+
+                a {
+
+
+                    .icon {
+                        width: 30px;
+                        height: 30px;
+                        padding: 7px;
+                        border-radius: 100%;
+                        background: $main-blue;
+                        margin: 5px;
+
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
                 }
             }
         }
-    }
 
-    .center {
-        height: 100%;
-        padding: 20px 20px 40px;
+        .center {
+            padding-top: 80px;
+            @include flexBox(column);
 
-        display: flex;
-        justify-content: space-between;
-
-        .items {
-            margin: 5px 0;
-            padding: 0 40px;
-
-            display: flex;
-            align-items: center;
-
-            .icon {
-                width: 30px;
-                padding: 7px;
-                border-radius: 100%;
-                background: $main-blue;
-                // margin: 5px;
-
-                display: flex;
-                // justify-content: space-between;
-                align-items: center;
-
+            .title {
+                font-weight: bold;
+                font-size: 28px;
+                font-family: 'Comfortaa', cursive, sans-serif;
             }
 
-            h1 {
-                font-size: 18px;
-                padding-top: 5px;
-                margin-left: 5px;
-                color: $main-blue;
-                font-weight: normal;
+            .div-block {
+                margin-left: 15px;
+                @include flexBox(column);
+
+                a {
+                    margin: 7px 0;
+                    font-family: 'Inter', sans-serif;
+                    font-weight: 500;
+                    text-transform: capitalize;
+                    text-decoration: none;
+                    color: #5c5c5c;
+                    font-size: 20px;
+
+                }
+
+                :hover {
+                    cursor: pointer;
+                    text-decoration: underline !important;
+                }
             }
         }
+
     }
 
-    .right-bottom {
+    .copyright-section {
         width: 100%;
-        display: flex;
-        justify-content: center;
-        color: #fff !important;
+        height: 80px;
+        background: $light-gray;
+        padding-left: 30px;
+        padding-right: 30px;
 
+
+
+        .copyright-text-wrap {
+            align-items: center;
+            display: flex;
+
+            .copyright-text {
+                color: #5c5c5c;
+                font-size: 18px;
+                line-height: 26px;
+                padding-left: 20px;
+            }
+        }
     }
 }

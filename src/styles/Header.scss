@@ -4,7 +4,7 @@
 .Header {
     height: 70px;
     padding: 0 40px;
-    background: $header-gray;
+    background: $light-gray;
 
     display: flex;
     justify-content: space-between;
@@ -22,17 +22,30 @@
         display: flex;
         align-items: center;
 
-        a {
+        a,
+        .dropdown-title {
             margin: 0 5px;
             text-decoration: none;
             color: $main-blue;
             font-family: 'Comfortaa', cursive;
             font-weight: bold;
         }
-        
-        a:hover{
+
+        a:hover {
             color: $lightBlue;
             text-decoration: underline;
         }
+
+    }
+}
+
+:where(.css-dev-only-do-not-override-1km3mtt).ant-dropdown .ant-dropdown-menu .ant-dropdown-menu-item {
+    height: 50px;
+    font-family: 'Comfortaa', cursive;
+    color: $main-blue;
+    font-size: 16px;
+
+    :hover {
+        text-decoration: underline;
     }
 }

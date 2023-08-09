@@ -1,0 +1,80 @@
+@import "funtions";
+@import "colors";
+
+.Forms {
+    padding-top: 20px;
+    background: $form-body-bg;
+    // height: 100vh;
+    padding-bottom: 100px;
+
+
+    .form {
+        width: 100px;
+        display: flex;
+        justify-content: center;
+
+        input {
+            padding-top: 5px;
+            padding-left: 0px;
+            border: none;
+            border-radius: 0;
+            border-bottom: 1px solid lightgray;
+            outline: none;
+            box-shadow: none;
+        }
+
+        .ant-picker {
+            input {
+                border: none;
+            }
+        }
+
+        .ant-picker-header {
+            background: #000 !important;
+        }
+
+        label {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        span {
+            font-weight: normal;
+            font-size: 14px;
+        }
+
+        .logo-container {
+            @include flexBox();
+
+            img {
+                width: 200px;
+            }
+        }
+
+        .submit-container {
+            @include flexBox();
+
+            button {
+                width: 200px;
+                height: 50px;
+                background: $main-blue;
+                color: white;
+                font-family: "Comfortaa", cursive !important;
+
+            }
+        }
+
+        .StudentRegistration {
+
+            // width: 80vw !important;
+            .span-error {
+                color: red;
+            }
+
+            form {
+                width: 70vw;
+                // background: #000;
+            }
+        }
+    }
+}

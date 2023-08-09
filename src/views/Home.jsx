@@ -1,21 +1,20 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 
 // components
 import LandingPage from '../components/LandingPage'
 import OurFocus from '../components/OurFocus'
 import OurMission from '../components/OurMission'
 import Newsletters from '../components/Newsletters'
-import Footer from '../components/Footer'
 
 const Home = () => {
-    
     return (
         <div className="Home">
-            <LandingPage />
-            <OurFocus />
-            <OurMission />
-            <Newsletters />
-            <Footer/>
+            <div className="main">
+                <LandingPage />
+                <OurFocus />
+                <OurMission />
+                <Newsletters />
+            </div>
         </div>
     )
 }

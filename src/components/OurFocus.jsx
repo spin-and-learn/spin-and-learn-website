@@ -21,8 +21,8 @@ const OurFocus = () => {
                         </li>
                     </ul>
                     <div className="right-bottom">
-                        <h1>You can gain access through...</h1>
-                        <Button onClick={() => window.location.href = "/forms"} height={45} title={"Get Programs"} />
+                        <h1 className='mb-3'>You can gain access through...</h1>
+                        <Button onClick={() => window.location.href = "/programs"} height={45} title={"Get Programs"} />
                     </div>
                 </section>
                 <section className="left mt-5">
