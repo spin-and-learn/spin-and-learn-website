@@ -1,10 +1,9 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { MainContext } from '../contexts/MainContext'
-import { SmileOutlined } from '@ant-design/icons';
 import Dropdown from './Dropdown'
 
 const NavLinks = () => {
-    const { isLoggedIn, setOpen, isOpen } = useContext(MainContext)
+    const { isLoggedIn } = useContext(MainContext)
     const [pathname, setPathname] = useState("/")
 
     const programs = [
@@ -47,7 +46,7 @@ const NavLinks = () => {
 
     useEffect(() => {
         setPathname(window.location.pathname)
-    }, [window.location.pathname])
+    }, [])
 
 
     return (

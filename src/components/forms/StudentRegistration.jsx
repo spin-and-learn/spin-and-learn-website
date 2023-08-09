@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { Card, Input, Form, Radio, Space, DatePicker, Button, Result } from "antd"
 import $ from "jquery"
 import axios from 'axios'

@@ -12,6 +12,7 @@ import "./styles/forms.scss"
 import "./styles/colors.scss"
 import "./styles/Footer.scss"
 import "./styles/programs.scss"
+import "./styles/contact.scss"
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(

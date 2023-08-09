@@ -3,6 +3,7 @@
 
 .Programs {
     width: 100%;
+    height: calc(100vh - 70px);
     background: $light-gray;
     padding: 40px 40px 60px 40px;
 
@@ -10,7 +11,7 @@
         @include flexBox(column, center, center);
 
         .title {
-            font-family: 'Comfortaa', cursive;
+            font-family: 'Comfortaa', cursive, sans-serif;
             text-align: center;
             letter-spacing: -.015em;
 
@@ -23,7 +24,7 @@
         @include flexBox();
 
         .program {
-            width: 425px;
+            width: 400px;
             height: 530px;
             margin: 0 20px;
 
@@ -37,7 +38,8 @@
                 margin-bottom: 12px;
                 font-size: 18px;
                 line-height: 144%;
-                letter-spacing: -.055em;
+                letter-spacing: -.065em;
+                font-family: 'Inter', sans-serif;
 
             }
 

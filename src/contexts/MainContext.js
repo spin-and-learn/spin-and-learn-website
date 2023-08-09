@@ -1,5 +1,6 @@
 import { createContext, useState } from "react"
 import Header from "../components/Header"
+import Footer from "../components/Footer"
 
 
 
@@ -18,6 +19,7 @@ const MainProvider = ({ children }) => {
         <MainContext.Provider value={data}>
             <Header />
             {children}
+            <Footer />
         </MainContext.Provider>
     )
 }

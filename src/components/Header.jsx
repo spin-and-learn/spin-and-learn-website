@@ -6,13 +6,6 @@ import Logo from "./Logo"
 
 
 const Header = () => {
-
-    const handleGetProgram = () => {
-        window.location.href = "/forms"
-
-    }
-
-
     return (
         <div className="Header">
             <div className="left">
@@ -22,7 +15,7 @@ const Header = () => {
             <div className="right">
                 <NavLinks />
                 <div className="ms-2">
-                    <Button onClick={handleGetProgram} height={40} width={200} filled={true} title={"Get Programs"} />
+                    <Button onClick={() => window.location.href = "/programs"} height={40} width={200} filled={true} title={"Get Programs"} />
                 </div>
             </div>
         </div>

@@ -2,9 +2,8 @@ import React, { useState } from 'react'
 import { Dropdown, Space } from 'antd'
 import { MdExpandCircleDown } from 'react-icons/md'
 
-export default ({ items, title }) => {
+const DropdownContainer = ({ items, title }) => {
     const [open, setIsOpen] = useState(false)
-
 
     const DropdownItems = (data = []) => {
         const result = []
@@ -25,7 +24,7 @@ export default ({ items, title }) => {
 
     return (
         <Dropdown onOpenChange={(value) => setIsOpen(value)} arrow placement="bottom" menu={{ items: DropdownItems(items), title }} >
-            <a onClick={(e) => e.preventDefault()}>
+            <span onClick={(e) => e.preventDefault()}>
                 <Space>
                     <span className="hover dropdown-title" style={{ fontSize: 16 }}>
                         {title + " "}
@@ -34,8 +33,9 @@ export default ({ items, title }) => {
                         </span>
                     </span>
                 </Space>
-            </a>
+            </span>
         </Dropdown>
     )
-
 }
+
+export default DropdownContainer
