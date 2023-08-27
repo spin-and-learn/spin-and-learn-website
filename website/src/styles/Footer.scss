@@ -1,0 +1,139 @@
+@import "./global";
+@import "funtions";
+
+.Footer {
+    height: 560px;
+    width: 100%;
+    padding-top: 20px;
+    background: $light-gray;
+
+    .main {
+        @include flexBox(row, space-between, center);
+
+        .left {
+            height: 100%;
+            padding: 20px;
+            @include flexBox(column);
+
+            .logo-footer {
+                padding-left: 100px;
+
+                img {
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+
+
+            .description {
+                max-width: 300px;
+                margin-bottom: 40px;
+                margin-left: 20px;
+                display: inline-block;
+                font-family: 'Inter', sans-serif;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 144%;
+                color: #5c5c5c;
+            }
+
+            .div-block {
+                margin-bottom: 10px;
+                margin-left: 15px;
+                @include flexBox(column, flex-start, center);
+
+
+                span {
+                    margin: 10px;
+                    // font-family: 'Inter', sans-serif;
+                    font-weight: 600;
+                    color: #5c5c5c;
+
+                }
+
+                img {
+                    width: 50px;
+                    height: 50px;
+                    margin-right: 10px;
+                }
+            }
+
+            .medias {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+
+                a {
+
+                    .icon {
+                        width: 30px;
+                        height: 30px;
+                        padding: 7px;
+                        border-radius: 100%;
+                        background: $main-blue;
+                        margin: 5px;
+
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+
+        .center {
+            padding-top: 80px;
+            @include flexBox(column);
+
+            .title {
+                font-weight: bold;
+                font-size: 28px;
+                font-family: 'Comfortaa', cursive, sans-serif;
+            }
+
+            .div-block {
+                margin-left: 15px;
+                @include flexBox(column);
+
+                a {
+                    margin: 7px 0;
+                    font-family: 'Inter', sans-serif;
+                    font-weight: 500;
+                    text-transform: capitalize;
+                    text-decoration: none;
+                    color: #5c5c5c;
+                    font-size: 20px;
+
+                }
+
+                :hover {
+                    cursor: pointer;
+                    text-decoration: underline !important;
+                }
+            }
+        }
+
+    }
+
+    .copyright-section {
+        width: 100%;
+        height: 80px;
+        background: $light-gray;
+        padding-left: 30px;
+        padding-right: 30px;
+
+
+
+        .copyright-text-wrap {
+            align-items: center;
+            display: flex;
+
+            .copyright-text {
+                color: #5c5c5c;
+                font-size: 18px;
+                line-height: 26px;
+                padding-left: 20px;
+            }
+        }
+    }
+}

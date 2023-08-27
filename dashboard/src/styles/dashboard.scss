@@ -1,0 +1,40 @@
+@import "./global.scss";
+
+.Dashboard {
+    .card-body {
+        @include flexBox(flex-start);
+
+        .icon-box {
+            width: 60px;
+            height: 60px;
+            background: rgba(200, 128, 41, 0.724);
+            border-radius: 100%;
+            margin-right: 10px;
+            @include flexBox();
+
+
+            span {
+                font-size: 30px;
+            }
+        }
+
+        .info {
+            @include flexBox(center, flex-start, column);
+        }
+    }
+
+    .view-more {
+        color: rgba(128, 128, 128, 0.8);
+        text-align: center;
+        @include flexBox();
+
+        .view-more:hover {
+            color: $main-blue;
+        }
+    }
+
+    .chart {
+        // @include flexBox();
+
+    }
+}

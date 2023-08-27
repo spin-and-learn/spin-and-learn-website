@@ -1,0 +1,77 @@
+@import "./global";
+
+
+.Header {
+    height: 70px;
+    padding: 0 40px;
+    background: $light-gray;
+    // position: fixed;
+    // top: 0;
+    // right: 0;
+    // left: 0;
+    // z-index: 1000;
+
+    .main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .left {
+            float: left;
+            display: block;
+            margin-left: -28px;
+            height: auto;
+            padding-left: 20px;
+        }
+
+        .right {
+            width: 100%;
+            display: flex;
+            align-items: center;
+
+
+            a,
+            .dropdown-title {
+                font-family: 'Comfortaa', cursive;
+
+
+                color: $main-blue;
+                padding: 16px 8px 16px 16px;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 150%;
+                transition: color .2s ease-in-out;
+                text-decoration: none;
+            }
+
+            a:hover {
+                color: $lightBlue;
+                text-decoration: underline;
+            }
+
+            // a {
+            //     color: #000;
+            //     padding: 16px 8px 16px 16px;
+            //     font-size: 16px;
+            //     font-weight: 500;
+            //     line-height: 150%;
+            //     transition: color .2s ease-in-out;
+            //     text-decoration: none;
+
+            // }
+
+        }
+    }
+
+}
+
+:where(.css-dev-only-do-not-override-1km3mtt).ant-dropdown .ant-dropdown-menu .ant-dropdown-menu-item {
+    height: 50px;
+    font-family: 'Comfortaa', cursive;
+    color: $main-blue;
+    font-size: 16px;
+
+    :hover {
+        text-decoration: underline;
+    }
+}

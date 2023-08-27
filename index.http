@@ -1,0 +1,24 @@
+GET http://0.0.0.0:8000 HTTP/1.1
+
+
+###
+GET http://0.0.0.0:8000/gets HTTP/1.1
+
+###
+POST http://0.0.0.0:8000/create HTTP/1.1
+
+
+
+# Backup
+###
+POST  http://0.0.0.0:8001 HTTP/1.1
+
+###
+POST  http://0.0.0.0:8001/backup HTTP/1.1
+
+###
+POST http://0.0.0.0:8001/restore  HTTP/1.1
+
+{
+    "path": "backup/August 21, 12:05 PM"
+}

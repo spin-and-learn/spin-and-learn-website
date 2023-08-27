@@ -1,0 +1,30 @@
+// Colors
+$main-blue: #0972CE;
+$header-gray: #f1f1f1;
+$light-gray: #FAFAFA;
+
+$lightBlue: rgba(9, 114, 206, 0.7);
+
+
+
+
+// Global Styles
+.Button {
+    button {
+        font-family: 'Comfortaa', cursive;
+        font-weight: bold;
+        border: none;
+        padding: 0 20px !important;
+        border-radius: 25px !important;
+    }
+}
+
+.hover:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+
+
+
+

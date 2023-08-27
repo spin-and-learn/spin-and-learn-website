@@ -1,0 +1,39 @@
+{
+    "project_info": {
+        "project_number": "655637833553",
+        "project_id": "bitnomia",
+        "storage_bucket": "bitnomia.appspot.com"
+    },
+    "client": [
+        {
+            "client_info": {
+                "mobilesdk_app_id": "1:655637833553:android:17f078e124c7e390c51570",
+                "android_client_info": {
+                    "package_name": "com.bitnomia.fulat"
+                }
+            },
+            "oauth_client": [
+                {
+                    "client_id": "655637833553-cd4j7lobq1tlu1n4kuvo8tjq2n8tuj66.apps.googleusercontent.com",
+                    "client_type": 3
+                }
+            ],
+            "api_key": [
+                {
+                    "current_key": "AIzaSyA_1fqrk_Gsyj8K3hyUsnubvJ_UUEEFDoA"
+                }
+            ],
+            "services": {
+                "appinvite_service": {
+                    "other_platform_oauth_client": [
+                        {
+                            "client_id": "655637833553-cd4j7lobq1tlu1n4kuvo8tjq2n8tuj66.apps.googleusercontent.com",
+                            "client_type": 3
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "configuration_version": "1"
+}

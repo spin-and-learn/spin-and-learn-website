@@ -1,0 +1,86 @@
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.hover-bg:hover {
+  cursor: pointer;
+  background: lightgray;
+}
+
+.hover:hover {
+  cursor: pointer;
+}
+
+.hover-ul:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.active:active {
+  opacity: 0.5;
+}
+
+.App {
+  display: flex;
+}
+
+/* #school {
+  background: #000;
+} */
+
+.ant-modal {
+  margin: 20px 0;
+}
+
+form input {
+  font-size: 16px !important;
+  color: rgba(0, 0, 0, 0.588) !important;
+}
+
+.input-edit {
+  color: rgba(0, 0, 0, 0.5) !important;
+  /* background: none !important; */
+  /* padding-left: 0 !important; */
+  /* border: none !important; */
+}
+
+.ant-form-item {
+  padding-bottom: 5px !important;
+  margin-bottom: 0px !important;
+}
+
+.ant-form-item-label label {
+  color: rgba(0, 0, 0, 1) !important;
+}
+
+.date-picker input {
+  font-size: 14px !important;
+  color: rgba(0, 0, 0, 0.624) !important;
+  font-weight: bold;
+}
+
+hr {
+  color: rgba(0, 0, 0, 0.624) !important;
+}
+
+.spin {
+  font-size: 30px !important;
+  border-radius: 25px;
+  fill: red !important;
+}
+
+.ant-modal-content {
+  border-radius: 100px !important;
+}

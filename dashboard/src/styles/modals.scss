@@ -1,0 +1,44 @@
+.ClockingModal {
+    .modal-time-box {
+        position: relative;
+        margin-right: 15px;
+        margin-bottom: 10px;
+        // padding-left: 3px;
+
+        .delete-icon {
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            z-index: 1000;
+            right: -7px;
+            border-radius: 100%;
+            background: red;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            span {
+                font-size: 14px;
+                color: white;
+                font-weight: bold;
+            }
+        }
+
+        .delete-icon:hover {
+            cursor: pointer;
+        }
+    }
+
+    ::selection {
+        color: gray;
+        height: 10px;
+        background: rgb(255, 255, 255);
+        border: 1px solid gray;
+        border-radius: 100%;
+    }
+
+    .save-container {
+        width: 357px;
+    }
+}

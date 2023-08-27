@@ -1,0 +1,13 @@
+@import "./global.scss";
+
+.Pie {
+    @include flexBox();
+
+    ul {
+        list-style: none;
+
+        li {
+            @include flexBox();
+        }
+    }
+}

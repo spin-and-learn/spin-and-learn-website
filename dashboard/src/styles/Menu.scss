@@ -1,0 +1,27 @@
+.Menu {
+  height: 100%;
+  //   background: #f8f9fa;
+  width: 250px;
+  
+  .items {
+    // width: 250px;
+    height: 50px;
+    padding: 0px 30px;
+    list-style: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    margin-bottom: 5px;
+
+    span {
+      padding: 0 5px 0 0;
+      color: gray;
+    }
+  }
+}
+
+.ant-layout-sider {
+  background: #000;
+  width: 350px !important;
+}
